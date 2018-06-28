@@ -1,0 +1,9 @@
+[submodule "dependency/mqtt"]
+	path = dependency/mqtt
+	url = https://github.com/ForwardLoopLLC/mqtt
+[submodule "target/dependency/mlx90614"]
+	path = target/dependency/mlx90614
+	url = git@github.com:ForwardLoopLLC/mlx90614.git
+[submodule "target/dependency/amg8833"]
+	path = target/dependency/amg8833
+	url = git@github.com:ForwardLoopLLC/amg8833.git
