@@ -1,0 +1,40 @@
+version: '2'
+# if you use -v /var/run/docker.sock:/var/run/docker.sock
+# and run docker-compose inside of a container
+# then all host volume paths are actually the host paths
+# and not the path mapped when bringing up the compose host
+services: 
+    network:
+        build: /floop/network/
+        environment:
+        -  MQTT_HOST=192.168.1.124
+        -  MQTT_PORT=1883
+        volumes:
+        - /home/floop/floop/network/:/network/
+        - /home/floop/floop/mlx90614/data/:/data/mlx90614/
+        - /home/floop/floop/amg8833/data/:/data/amg8833/
+        command: /network/run.sh
+    mlx90614:
+        # this path is inside the compose container
+        build: /floop/spot/
+        privileged: true
+        environment:
+        - MLX90614_BUS=1
+        - MLX90614_DATA=/mlx90614/data/data
+        - MLX90614_DELAY=500000
+        # these paths are on the host 
+        volumes:
+        - /home/floop/floop/mlx90614/data/:/mlx90614/data/
+        - /home/floop/floop/dependency/mlx90614/:/dependency/mlx90614/
+        - /home/floop/floop/spot/:/spot/
+        command: /spot/run.sh 
+    amg8833:
+        # this path is inside the compose container
+        build: /floop/grid/
+        privileged: true
+        # these paths are on the host 
+        volumes:
+        - /home/floop/floop/amg8833/data/:/amg8833/data/
+        - /home/floop/floop/dependency/amg8833/:/dependency/amg8833/
+        - /home/floop/floop/grid/:/grid/
+        command: /grid/run.sh 

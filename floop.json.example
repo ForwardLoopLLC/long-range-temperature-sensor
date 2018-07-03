@@ -1,0 +1,30 @@
+{
+   "groups":{
+      "group0":{
+         "cores":{
+            "default":{
+               "host_network":false,
+               "hardware_devices":[
+
+               ],
+               "privileged":true,
+               "build_file":"Dockerfile.linux",
+               "test_file":"Dockerfile.test",
+               "docker_socket":"/var/run/docker.sock",
+               "host_source":"./target/"
+            },
+            "core0":{
+               "address":"192.168.1.100",
+               "target_source":"/home/floop/floop/",
+               "host_key":"~/.ssh/id_rsa",
+               "user":"floop",
+               "port":"22"
+            }
+         }
+      },
+      "default":{
+         "host_rsync_bin":"/usr/bin/rsync",
+         "host_docker_machine_bin":"/usr/local/bin/docker-machine"
+      }
+   }
+}

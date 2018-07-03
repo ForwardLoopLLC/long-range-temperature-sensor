@@ -4,3 +4,6 @@
 [submodule "target/dependency/amg8833"]
 	path = target/dependency/amg8833
 	url = git@github.com:ForwardLoopLLC/amg8833.git
+[submodule "dependency/mqtt"]
+	path = dependency/mqtt
+	url = https://github.com/ForwardLoopLLC/mqtt
