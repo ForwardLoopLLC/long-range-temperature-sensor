@@ -12,8 +12,8 @@ build:
                 cd docs && \
                 make html && \
                 cd .. && \
-                mkdir -p sync/ && \
-                cp -r docs/build/html/ sync/gallery/ && \
+                mkdir -p sync/gallery/ && \
+                cp -r docs/build/html/ sync/gallery/$WERCKER_GIT_REPOSITORY && \
                 ls -R sync/
         - script:
             name: push documentation
