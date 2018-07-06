@@ -12,7 +12,7 @@ build:
                 cd docs && \
                 make html && \
                 cd .. && \
-                mkdir -p sync/gallery/ && \
+                mkdir -p sync/ && \
                 cp -r docs/build/html/ sync/gallery/ && \
                 ls -R sync/
                 #        - script:
