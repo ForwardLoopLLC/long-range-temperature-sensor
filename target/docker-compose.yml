@@ -6,9 +6,8 @@ version: '2'
 services: 
     network:
         build: /floop/network/
-        environment:
-        -  MQTT_HOST=192.168.1.124
-        -  MQTT_PORT=1883
+        env_file:
+        - ./network.env
         volumes:
         - /home/floop/floop/network/:/network/
         - /home/floop/floop/mlx90614/data/:/data/mlx90614/

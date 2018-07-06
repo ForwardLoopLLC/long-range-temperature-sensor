@@ -35,10 +35,10 @@ Use
 ---
 When you purchase Forward Loop Zero with the optional grid-eye and long-range sensors, your Forward Loop Zero arrives assembled and configured to run the demonstration application out of the box.
 
-For more information about the demonstration application, please see `intro/demo`.
+For more information about the demonstration application, please see the :doc:`intro/demo`.
 
 Build
 -----
 You can use the long-range temperature sensor to build your own applications that incorporate your own requirements or business logic.
 
-For more information about the long-range temperature sensor and how to modify the demonstration application, please see the `intro/tech`.
+For more information about the long-range temperature sensor and how to modify the demonstration application, please see the :doc:`intro/custom`.

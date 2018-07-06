@@ -10640,3 +10640,290 @@
 2018-07-03 13:06:23,734 INFO core2 (target) - run: floop
 2018-07-03 13:06:23,734 INFO core2 (target) - run: 
 2018-07-03 13:06:23,734 INFO core2 (target) - run: docker run --name floop -v /home/floop/floop/:/floop/ --privileged -v /var/run/docker.sock:/var/run/docker.sock floop
+2018-07-03 16:25:00,478 ERROR core2 (target) - run: SystemCallException()
+2018-07-06 16:59:32,831 INFO core2 (target) - push: mkdir -p /home/floop/floop/
+2018-07-06 16:59:37,628 INFO core2 (target) - push: 
+2018-07-06 16:59:37,628 INFO core2 (target) - push: rsync -avhz -e '/usr/local/bin/docker-machine ssh' ./target/ core2:'/home/floop/floop/' --exclude=floop.log --exclude=floop.json --delete
+2018-07-06 16:59:40,405 ERROR core2 (target) - push: SystemCallException()
+2018-07-06 16:59:46,594 INFO core2 (target) - push: mkdir -p /home/floop/floop/
+2018-07-06 16:59:49,319 INFO core2 (target) - push: 
+2018-07-06 16:59:49,319 INFO core2 (target) - push: rsync -avhz -e '/usr/local/bin/docker-machine ssh' ./target/ core2:'/home/floop/floop/' --exclude=floop.log --exclude=floop.json --delete
+2018-07-06 16:59:52,588 INFO core2 (target) - push: sending incremental file list
+2018-07-06 16:59:52,589 INFO core2 (target) - push: ./
+2018-07-06 16:59:52,589 INFO core2 (target) - push: Dockerfile.linux
+2018-07-06 16:59:52,589 INFO core2 (target) - push: docker-compose.yml
+2018-07-06 16:59:52,589 INFO core2 (target) - push: run.sh
+2018-07-06 16:59:52,589 INFO core2 (target) - push: dependency/
+2018-07-06 16:59:52,589 INFO core2 (target) - push: dependency/amg8833/
+2018-07-06 16:59:52,589 INFO core2 (target) - push: dependency/amg8833/.git
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/.gitignore
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/.gitmodules
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/Dockerfile.arduino
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/Dockerfile.linux
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/Doxyfile
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/README.rst
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/doc.sh
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/floop.json.example
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/run.sh.linux
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/wercker.yml
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/amg8833/
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/amg8833/amg8833.h
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/Makefile
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/make.bat
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/conf.py
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/floop-amg8833.png
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/index.rst
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/logo.png
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/cpp/
+2018-07-06 16:59:52,590 INFO core2 (target) - push: dependency/amg8833/docs/source/cpp/api.rst
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/example/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/example/file_api_linux.cpp
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/example/main.cpp
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/.git
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/.gitignore
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/Doxyfile
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/README.rst
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/doc.sh
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/wercker.yml
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/Makefile
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/make.bat
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/conf.py
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/index.rst
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/logo.png
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/cpp/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/cpp/api.rst
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/example/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/example/main.cpp
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/linux/
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/amg8833/include/i2c/linux/i2c.h
+2018-07-06 16:59:52,591 INFO core2 (target) - push: dependency/mlx90614/
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/.git
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/.gitignore
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/.gitmodules
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/Dockerfile.arduino
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/Dockerfile.linux
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/Doxyfile
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/README.rst
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/doc.sh
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/floop.json.example
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/run.sh.linux
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/wercker.yml
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/Makefile
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/make.bat
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/conf.py
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/floop-mlx90614.png
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/index.rst
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/logo.png
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/cpp/
+2018-07-06 16:59:52,592 INFO core2 (target) - push: dependency/mlx90614/docs/source/cpp/api.rst
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/example/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/example/file_api_linux.cpp
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/example/main.cpp
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/.git
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/.gitignore
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/Doxyfile
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/README.rst
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/doc.sh
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/wercker.yml
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/Makefile
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/make.bat
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/conf.py
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/index.rst
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/logo.png
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/cpp/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/cpp/api.rst
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/example/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/example/main.cpp
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/linux/
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/include/i2c/linux/i2c.h
+2018-07-06 16:59:52,593 INFO core2 (target) - push: dependency/mlx90614/mlx90614/
+2018-07-06 16:59:52,594 INFO core2 (target) - push: dependency/mlx90614/mlx90614/mlx90614.h
+2018-07-06 16:59:52,594 INFO core2 (target) - push: grid/
+2018-07-06 16:59:52,594 INFO core2 (target) - push: grid/Dockerfile
+2018-07-06 16:59:52,594 INFO core2 (target) - push: grid/run.sh
+2018-07-06 16:59:52,594 INFO core2 (target) - push: network/
+2018-07-06 16:59:52,594 INFO core2 (target) - push: network/Dockerfile
+2018-07-06 16:59:52,594 INFO core2 (target) - push: network/main.py
+2018-07-06 16:59:52,594 INFO core2 (target) - push: network/run.sh
+2018-07-06 16:59:52,594 INFO core2 (target) - push: spot/
+2018-07-06 16:59:52,594 INFO core2 (target) - push: spot/Dockerfile
+2018-07-06 16:59:52,594 INFO core2 (target) - push: spot/run.sh
+2018-07-06 16:59:52,594 INFO core2 (target) - push: 
+2018-07-06 16:59:52,594 INFO core2 (target) - push: sent 533.55K bytes  received 1.70K bytes  152.93K bytes/sec
+2018-07-06 16:59:52,594 INFO core2 (target) - push: total size is 934.07K  speedup is 1.75
+2018-07-06 16:59:52,594 INFO core2 (target) - push: 
+2018-07-06 16:59:52,594 INFO core2 (target) - build: docker build -f /home/floop/floop//Dockerfile.linux -t floop /home/floop/floop//
+2018-07-06 16:59:58,766 INFO core2 (target) - build: Sending build context to Docker daemon  1.016MB
+2018-07-06 16:59:58,766 INFO core2 (target) - build: Step 1/4 : FROM library/python:3.6
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> 74dc88f2949c
+2018-07-06 16:59:58,767 INFO core2 (target) - build: Step 2/4 : RUN pip install docker-compose
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> Using cache
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> 05aef13c6e0a
+2018-07-06 16:59:58,767 INFO core2 (target) - build: Step 3/4 : WORKDIR /floop
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> Using cache
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> 759bd2d5560f
+2018-07-06 16:59:58,767 INFO core2 (target) - build: Step 4/4 : CMD /floop/run.sh
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> Using cache
+2018-07-06 16:59:58,767 INFO core2 (target) - build:  ---> 9cacfba84014
+2018-07-06 16:59:58,767 INFO core2 (target) - build: Successfully built 9cacfba84014
+2018-07-06 16:59:58,768 INFO core2 (target) - build: Successfully tagged floop:latest
+2018-07-06 16:59:58,768 INFO core2 (target) - build: 
+2018-07-06 16:59:58,768 INFO core2 (target) - run: docker rm -f floop || true
+2018-07-06 17:00:01,796 INFO core2 (target) - run: floop
+2018-07-06 17:00:01,796 INFO core2 (target) - run: 
+2018-07-06 17:00:01,797 INFO core2 (target) - run: docker run --name floop -v /home/floop/floop/:/floop/ --privileged -v /var/run/docker.sock:/var/run/docker.sock floop
+2018-07-06 17:03:27,322 ERROR core2 (target) - run: SystemCallException()
+2018-07-06 17:03:30,321 INFO core2 (target) - push: mkdir -p /home/floop/floop/
+2018-07-06 17:03:32,495 INFO core2 (target) - push: 
+2018-07-06 17:03:32,495 INFO core2 (target) - push: rsync -avhz -e '/usr/local/bin/docker-machine ssh' ./target/ core2:'/home/floop/floop/' --exclude=floop.log --exclude=floop.json --delete
+2018-07-06 17:03:35,304 INFO core2 (target) - push: sending incremental file list
+2018-07-06 17:03:35,304 INFO core2 (target) - push: ./
+2018-07-06 17:03:35,304 INFO core2 (target) - push: .docker-compose.yml.swp
+2018-07-06 17:03:35,305 INFO core2 (target) - push: .network.env.swp
+2018-07-06 17:03:35,305 INFO core2 (target) - push: Dockerfile.linux
+2018-07-06 17:03:35,305 INFO core2 (target) - push: docker-compose.yml
+2018-07-06 17:03:35,305 INFO core2 (target) - push: network.env
+2018-07-06 17:03:35,305 INFO core2 (target) - push: run.sh
+2018-07-06 17:03:35,305 INFO core2 (target) - push: dependency/
+2018-07-06 17:03:35,305 INFO core2 (target) - push: dependency/amg8833/
+2018-07-06 17:03:35,305 INFO core2 (target) - push: dependency/amg8833/.git
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/.gitignore
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/.gitmodules
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/Dockerfile.arduino
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/Dockerfile.linux
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/Doxyfile
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/README.rst
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/doc.sh
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/floop.json.example
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/run.sh.linux
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/wercker.yml
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/amg8833/
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/amg8833/amg8833.h
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/Makefile
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/make.bat
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/source/
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/source/conf.py
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/source/floop-amg8833.png
+2018-07-06 17:03:35,306 INFO core2 (target) - push: dependency/amg8833/docs/source/index.rst
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/docs/source/logo.png
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/docs/source/cpp/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/docs/source/cpp/api.rst
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/example/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/example/file_api_linux.cpp
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/example/main.cpp
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/.git
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/.gitignore
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/Doxyfile
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/README.rst
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/doc.sh
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/wercker.yml
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/Makefile
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/make.bat
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/conf.py
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/index.rst
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/logo.png
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/cpp/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/docs/source/cpp/api.rst
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/example/
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/example/main.cpp
+2018-07-06 17:03:35,307 INFO core2 (target) - push: dependency/amg8833/include/i2c/linux/
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/amg8833/include/i2c/linux/i2c.h
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/.git
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/.gitignore
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/.gitmodules
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/Dockerfile.arduino
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/Dockerfile.linux
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/Doxyfile
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/README.rst
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/doc.sh
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/floop.json.example
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/run.sh.linux
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/wercker.yml
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/Makefile
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/make.bat
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/source/
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/source/conf.py
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/source/floop-mlx90614.png
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/source/index.rst
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/source/logo.png
+2018-07-06 17:03:35,308 INFO core2 (target) - push: dependency/mlx90614/docs/source/cpp/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/docs/source/cpp/api.rst
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/example/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/example/file_api_linux.cpp
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/example/main.cpp
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/.git
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/.gitignore
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/Doxyfile
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/README.rst
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/doc.sh
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/wercker.yml
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/Makefile
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/make.bat
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/conf.py
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/index.rst
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/logo.png
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/cpp/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/docs/source/cpp/api.rst
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/example/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/example/main.cpp
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/linux/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/include/i2c/linux/i2c.h
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/mlx90614/
+2018-07-06 17:03:35,309 INFO core2 (target) - push: dependency/mlx90614/mlx90614/mlx90614.h
+2018-07-06 17:03:35,310 INFO core2 (target) - push: grid/
+2018-07-06 17:03:35,310 INFO core2 (target) - push: grid/Dockerfile
+2018-07-06 17:03:35,310 INFO core2 (target) - push: grid/run.sh
+2018-07-06 17:03:35,310 INFO core2 (target) - push: network/
+2018-07-06 17:03:35,310 INFO core2 (target) - push: network/Dockerfile
+2018-07-06 17:03:35,310 INFO core2 (target) - push: network/main.py
+2018-07-06 17:03:35,310 INFO core2 (target) - push: network/run.sh
+2018-07-06 17:03:35,310 INFO core2 (target) - push: spot/
+2018-07-06 17:03:35,310 INFO core2 (target) - push: spot/Dockerfile
+2018-07-06 17:03:35,310 INFO core2 (target) - push: spot/run.sh
+2018-07-06 17:03:35,310 INFO core2 (target) - push: 
+2018-07-06 17:03:35,310 INFO core2 (target) - push: sent 534.79K bytes  received 1.76K bytes  153.30K bytes/sec
+2018-07-06 17:03:35,310 INFO core2 (target) - push: total size is 958.65K  speedup is 1.79
+2018-07-06 17:03:35,310 INFO core2 (target) - push: 
+2018-07-06 17:03:35,311 INFO core2 (target) - build: docker build -f /home/floop/floop//Dockerfile.linux -t floop /home/floop/floop//
+2018-07-06 17:03:38,411 INFO core2 (target) - build: Sending build context to Docker daemon  1.043MB
+2018-07-06 17:03:38,412 INFO core2 (target) - build: Step 1/4 : FROM library/python:3.6
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> 74dc88f2949c
+2018-07-06 17:03:38,412 INFO core2 (target) - build: Step 2/4 : RUN pip install docker-compose
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> Using cache
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> 05aef13c6e0a
+2018-07-06 17:03:38,412 INFO core2 (target) - build: Step 3/4 : WORKDIR /floop
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> Using cache
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> 759bd2d5560f
+2018-07-06 17:03:38,412 INFO core2 (target) - build: Step 4/4 : CMD /floop/run.sh
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> Using cache
+2018-07-06 17:03:38,412 INFO core2 (target) - build:  ---> 9cacfba84014
+2018-07-06 17:03:38,412 INFO core2 (target) - build: Successfully built 9cacfba84014
+2018-07-06 17:03:38,412 INFO core2 (target) - build: Successfully tagged floop:latest
+2018-07-06 17:03:38,412 INFO core2 (target) - build: 
+2018-07-06 17:03:38,412 INFO core2 (target) - run: docker rm -f floop || true
+2018-07-06 17:03:43,122 INFO core2 (target) - run: floop
+2018-07-06 17:03:43,122 INFO core2 (target) - run: 
+2018-07-06 17:03:43,123 INFO core2 (target) - run: docker run --name floop -v /home/floop/floop/:/floop/ --privileged -v /var/run/docker.sock:/var/run/docker.sock floop

@@ -1,3 +1,0 @@
-Custom Application Guide
-========================
-a

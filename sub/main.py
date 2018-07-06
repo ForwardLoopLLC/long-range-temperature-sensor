@@ -2,7 +2,6 @@
 
 import paho.mqtt.client as mqtt
 import matplotlib
-#matplotlib.use('TKAgg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gs
 import matplotlib.colors as colors
