@@ -1,0 +1,23 @@
+box:
+    id: python:3.6
+
+build:
+    steps:
+        - pip-install:
+            requirements_file: ""
+            packages_list: "sphinx sphinx-tabs awscli"
+        - script:
+            name: build documentation
+            code: |
+                cd docs && \
+                make html && \
+                cd .. && \
+                mkdir -p sync/gallery/ && \
+                cp -r docs/build/html/ sync/gallery/ && \
+                ls -R sync/
+                #        - script:
+                #            name: push documentation
+                #            code: |
+                #                aws configure set aws_access_key_id $AWS_KEY_ID && \
+                #                aws configure set aws_secret_access_key $AWS_SECRET_KEY && \
+                #                aws s3 sync sync/ s3://docs.forward-loop.com
